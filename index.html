@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Administration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #D3B3B3;
+        }
+        form {
+            margin: 20px auto;
+            width: 50%;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        label, input, select {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+        input[type="text"], input[type="file"], select {
+            padding: 2px;
+        }
+        input[type="radio"] {
+            display: inline-block;
+            width: auto;
+        }
+        input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #C0A0A0;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="background-image: url('pexels-alscre-2847648.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+
+    <h1>Student Administration</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Messi</td>
+                <td>38</td>
+                <td><a href="#">Barcelona</a></td>
+            </tr>
+            <tr>
+                <td>Ronaldo</td>
+                <td>40</td>
+                <td><a href="#">Madrid</a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <form action="process.html" method="get">
+        <fieldset>
+            <legend>Registration</legend>
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+            
+            <label>Choose Subject:</label>
+            <label for="html">HTML</label>
+            <input type="radio" id="html" name="subject" value="HTML">
+            <label for="css">CSS</label>
+            <input type="radio" id="css" name="subject" value="CSS">
+            <label for="js">JS</label>
+            <input type="radio" id="js" name="subject" value="JS">
+           
+            
+            <label for="color">Choose Color:</label>
+            <input type="color" id="color" name="color">
+            
+            <label for="htmlFile">Choose HTML File:</label>
+            <input type="file" id="htmlFile" name="htmlFile" accept=".html">
+            
+            <label for="grade">Your Grade:</label>
+            <input type="text" id="grade" name="grade">
+            
+            <label for="city">Choose City:</label>
+            <select id="city" name="city">
+                <option value="Barcelona">Barcelona</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Cairo">Cairo</option>
+            </select>
+            
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <footer>
+        © Atomika - Frontend
+    </footer>
+
+</body>
+</html>
